@@ -29,21 +29,16 @@ built on top of [LinuxGSM](https://linuxgsm.com/) — the battle-tested game ser
 
 ```
 man-cave dashboard
-    │
-    ▼
-arcade API (FastAPI)
-    │
-    ├── LinuxGSM (server management)
-    │   ├── SteamCMD (download server files)
-    │   ├── systemd (service management)
-    │   └── game configs (auto-generated)
-    │
-    ├── port manager
-    │   ├── UPnP (automatic)
-    │   └── ASUS router API (fallback)
-    │
-    └── DDNS manager
-        └── ASUS DDNS (asuscomm.com)
+  > arcade API (FastAPI)
+      - LinuxGSM (server management)
+          SteamCMD (download server files)
+          systemd (service management)
+          game configs (auto-generated)
+      - port manager
+          UPnP (automatic)
+          ASUS router API (fallback)
+      - DDNS manager
+          ASUS DDNS (asuscomm.com)
 ```
 
 ## supported games (via LinuxGSM)
